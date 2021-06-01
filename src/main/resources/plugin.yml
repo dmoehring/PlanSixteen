@@ -3,7 +3,7 @@ version: ${project.version}
 main: xyz.dominik.minecraft.plansixteen.PlanSixteen
 api-version: 1.16
 
-command:
+commands:
   heal:
     description: Diese Befehl heilt Dich
     aliases: ["healme"]
