@@ -1,0 +1,14 @@
+name: Plansixteen
+version: ${project.version}
+main: xyz.dominik.minecraft.plansixteen.PlanSixteen
+api-version: 1.16
+
+command:
+  heal:
+    description: Diese Befehl heilt Dich
+    aliases: ["healme"]
+
+permissions:
+  xyz.dominik.minecraft.plansixteen.heal:
+    description: Heilen hoehoe
+    default: op
