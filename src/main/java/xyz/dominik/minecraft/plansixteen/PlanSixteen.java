@@ -1,15 +1,14 @@
 package xyz.dominik.minecraft.plansixteen;
 
 import org.bukkit.Bukkit;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.Objects;
 
 public final class PlanSixteen extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        this.register();
+        this.registerCommand("heal", new HealCommand());
     }
 
     @Override
@@ -17,7 +16,7 @@ public final class PlanSixteen extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-    protected void register() {
-        Bukkit.getPluginCommand("heal").setExecutor(new HealCommand());
+    protected void registerCommand(String command, CommandExecutor executor) {
+        Bukkit.getPluginCommand(command).setExecutor(executor);
     }
 }
