@@ -5,7 +5,7 @@ api-version: 1.16
 
 commands:
   heal:
-    description: Diese Befehl heilt Dich
+    description: Dieser Befehl heilt dich
     aliases: ["healme"]
 
 permissions:
